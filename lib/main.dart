@@ -1,20 +1,23 @@
 import 'package:api_implementation/Screens/main_screen.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'Data Provider From Server/data_provider.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: 'Flutter Demo',
+    return ChangeNotifierProvider(
+      create: (_) => NewsProvider(), // Provide the NewsProvider to the app
+      child: MaterialApp(
+        title: 'News App',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(brightness: Brightness.dark),
-        home: const MainScreen());
+        home: const MainScreen(),
+      ),
+    );
   }
 }
