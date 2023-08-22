@@ -1,4 +1,5 @@
 import 'package:api_implementation/Screens/choice_screen.dart';
+import 'package:api_implementation/Screens/display_news_screen.dart';
 import 'package:flutter/material.dart';
 
 class MainScreen extends StatelessWidget {
@@ -47,7 +48,7 @@ class MainScreen extends StatelessWidget {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const ChoiceScreen()));
+                            builder: (context) => const DisplayNewsScreen()));
                   },
                   child: const Text(
                     "Get Started",

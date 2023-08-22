@@ -1,7 +1,7 @@
 import 'package:api_implementation/Data%20Provider%20From%20Server/data_provider.dart';
 import 'package:api_implementation/Links.dart/links.dart';
 import 'package:api_implementation/Model%20Classes/Engadget/Content.dart';
-import 'package:api_implementation/Widget/news_display_widget.dart';
+import 'package:api_implementation/Widgets/news_display_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -28,8 +28,9 @@ class _TechCrunchHeadlinesState extends State<TechCrunchHeadlines> {
 
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: Colors.blue,
-            title: const Text("TechCrunch Headlines")),
+            backgroundColor: const Color.fromARGB(255, 99, 69, 47),
+            title: const Text("TechCrunch Headlines"),
+            automaticallyImplyLeading: false),
         body: NewsDisplayWidget(newss: news));
   }
 }
