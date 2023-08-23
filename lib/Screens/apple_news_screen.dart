@@ -2,7 +2,7 @@ import 'package:api_implementation/Links.dart/links.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart'; // Import the provider package
 import '../Data Provider From Server/data_provider.dart';
-import '../Widget/news_display_widget.dart';
+import '../Widgets/news_display_widget.dart';
 
 class AppleNewsScreen extends StatefulWidget {
   const AppleNewsScreen({super.key});
@@ -27,9 +27,9 @@ class _AppleNewsScreenState extends State<AppleNewsScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: const Text("Apple News"),
-      ),
+          backgroundColor: Color.fromARGB(255, 99, 69, 47),
+          title: const Text("Apple News"),
+          automaticallyImplyLeading: false),
       body: NewsDisplayWidget(newss: news),
     );
   }

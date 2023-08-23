@@ -1,6 +1,6 @@
 import 'package:api_implementation/Data%20Provider%20From%20Server/data_provider.dart';
 import 'package:api_implementation/Links.dart/links.dart';
-import 'package:api_implementation/Widget/news_display_widget.dart';
+import 'package:api_implementation/Widgets/news_display_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -27,8 +27,9 @@ class _BusinessHeadlinesScreenState extends State<BusinessHeadlinesScreen> {
     final news = newsProvider.currentNews;
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: Colors.blue,
-            title: const Text("Top Business Headlines")),
+            backgroundColor: const Color.fromARGB(255, 99, 69, 47),
+            title: const Text("Top Business Headlines"),
+            automaticallyImplyLeading: false),
         body: NewsDisplayWidget(newss: news));
   }
 }

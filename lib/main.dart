@@ -1,7 +1,9 @@
 import 'package:api_implementation/Screens/main_screen.dart';
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'Data Provider From Server/data_provider.dart';
+import 'Screens/display_news_screen.dart';
 
 void main() {
   runApp(MyApp());

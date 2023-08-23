@@ -11,7 +11,7 @@ class NewsDisplayWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(15),
+        padding: const EdgeInsets.only(top: 20),
         child: newss == null
             ? const Center(
                 child: CircularProgressIndicator(),
